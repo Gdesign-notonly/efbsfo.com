@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Керамическая студия</title>
+    <meta name="description" content="Фронтенд лендинг для керамической студи">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <button id="change">Сменить тему</button>
+    <script>
+        change.onclick=()=>document.body.classList.toggle("color")
+    </script>
+<header>
+    <pre class="menu">Главная               Услуги              Товары          Контакты</pre>
+</header>
+<main>
+
+<div class="heroblock">
+    <img class="ph1" src="photo1.jpg" alt="Рабочие инструменты в керамической студии">
+    <button class="herobotton">Подробнее</button>
+</div>
+
+<div class="cards">
+
+    <div class="card1">
+        <img class="ph2" src="https://i.pinimg.com/1200x/e3/01/23/e30123fe6208ecba6fd8651f909684dc.jpg">
+        <p>Первая карточка с описанием</p>
+        <button id="c1">Купить</button>
+        <button id="c12">Убрать</button>
+        <p>Количество: <span id="counter">0</span></p>
+        <script>
+            c1.onclick=()=>counter.innerHTML++
+            c12.onclick=()=>counter.innerHTML--
+        </script>
+
+    </div>
+
+     <div class="card2">
+        <img class="ph3" src="https://i.pinimg.com/1200x/e3/01/23/e30123fe6208ecba6fd8651f909684dc.jpg">
+        <p>Вторая карточка с описанием</p>
+        <button id="c2">Купить</button>
+        <button id="two">Убрать</button>
+        <p>Количество: <span id="counter2">0</span></p>
+        <script>
+            c2.onclick=()=>counter2.innerHTML++
+            two.onclick=()=>counter2.innerHTML--
+        </script>
+
+
+        
+
+    <div class="card3">
+        <img class="ph4" src="https://i.pinimg.com/1200x/e3/01/23/e30123fe6208ecba6fd8651f909684dc.jpg">
+        <p>Третья карточка с описанием</p>
+        <button id="third">Купить</button>
+        <button id="tt">Убрать</button>
+        <p>Количество: <span id="counter3">0</span></p>
+         <script>
+            third.onclick=()=>counter3.innerHTML++
+            tt.onclick=()=>counter3.innerHTML--
+        </script>
+
+    </div>
+</div>
+
+<h1 id="typingtext"></h1>
+
+<div class="forma">
+<h2>Заполните форму и мы с вами свяжемся</h2>
+
+<form class="place1">
+
+    <label>
+        <p>Имя</p>
+        <input type="text" name="first" placeholder="Ваше имя">
+    </label>
+
+    <label>
+        <p>Телефон</p>
+        <input type="tel" name="phone" placeholder="...">
+    </label>
+
+    <label>
+        <p>Почта</p>
+        <input type="email" name="mail">
+    </label>
+
+    <label>
+        <p>Как вам веб-сайт?</p>
+    <input type="comment" name="forth" placeholder="Ваш комментарий">
+    </label>
+
+     <label>
+       <p>Какая кремик вас интересует?</p>
+    <input type="comment" name="fifth" placeholder="Ваш комментарий">
+    </label>
+</form>
+
+</div>
+
+</main>
+
+ <script src="script.js"></script>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
+
